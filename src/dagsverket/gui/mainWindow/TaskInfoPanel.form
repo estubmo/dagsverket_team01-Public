@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="dagsverket.gui.mainWindow.TaskInfoPanel">
+  <grid id="27dc6" binding="rootPane" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="572" height="400"/>
+    </constraints>
+    <properties>
+      <inheritsPopupMenu value="true"/>
+      <minimumSize width="300" height="0"/>
+      <opaque value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="da9f8" layout-manager="GridLayoutManager" row-count="15" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <alignmentY value="0.0"/>
+          <inheritsPopupMenu value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="7a8fc" layout-manager="BorderLayout" hgap="0" vgap="-1">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="586a7" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="16"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value="Dato:  "/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="d67e6" class="com.toedter.calendar.JDateChooser" binding="date">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <minimumSize width="42" height="18"/>
+                  <preferredSize width="123" height="20"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <vspacer id="cb441">
+            <constraints>
+              <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <grid id="b9bad" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="1" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="da416" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="-1"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value="Adresse:  "/>
+                  <verticalAlignment value="0"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="eeb99" class="javax.swing.JTextField" binding="textFieldAdresse">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <minimumSize width="14" height="18"/>
+                  <preferredSize width="14" height="20"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="54f3f" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="b2a4a" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="16"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value="Kunde:  "/>
+                  <verticalAlignment value="0"/>
+                  <verticalTextPosition value="0"/>
+                </properties>
+              </component>
+              <component id="9931a" class="javax.swing.JTextField" binding="kundeTextField">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <editable value="false"/>
+                  <minimumSize width="14" height="18"/>
+                  <preferredSize width="53" height="20"/>
+                  <text value="Kunde"/>
+                </properties>
+              </component>
+              <component id="eee55" class="javax.swing.JButton" binding="selectEmpButton" custom-create="true">
+                <constraints border-constraint="East"/>
+                <properties>
+                  <borderPainted value="false"/>
+                  <enabled value="false"/>
+                  <focusPainted value="true"/>
+                  <maximumSize width="75" height="20"/>
+                  <minimumSize width="75" height="20"/>
+                  <opaque value="true"/>
+                  <preferredSize width="28" height="20"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="661e" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="69b1e" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="16"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value="Navn:  "/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="c0084" class="javax.swing.JTextField" binding="textFieldNavn">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <minimumSize width="14" height="18"/>
+                  <preferredSize width="14" height="20"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="2a9d7" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="56b0d" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="16"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value="Befaring:  "/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="e09f7" class="javax.swing.JTextField" binding="textFieldBefaring">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <minimumSize width="14" height="18"/>
+                  <preferredSize width="14" height="20"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="18d4d" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="4a9b9" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="16"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value=""/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="b9c3c" class="javax.swing.JCheckBox" binding="uteCheck">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <minimumSize width="89" height="18"/>
+                  <preferredSize width="89" height="20"/>
+                  <text value="Utendørs"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="12bff" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="3ea8a" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="-1"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value="Registrert av:  "/>
+                  <verticalAlignment value="1"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="4e9b" class="javax.swing.JTextField" binding="regAvTextField">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <editable value="false"/>
+                  <minimumSize width="14" height="18"/>
+                  <preferredSize width="53" height="20"/>
+                  <text value="Kunde"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="287a2" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="37d4" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="16"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value="Poststed:  "/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="6cfa2" class="javax.swing.JTextField" binding="textFieldPoststed">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <minimumSize width="14" height="18"/>
+                  <preferredSize width="14" height="20"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="e5a6a" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="b007" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="16"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value=""/>
+                  <verticalAlignment value="1"/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="e0dc6" class="javax.swing.JCheckBox" binding="betaltCheckBox" default-binding="true">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <minimumSize width="67" height="18"/>
+                  <preferredSize width="67" height="20"/>
+                  <text value="Betalt"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="4be61" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="91ff5" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="16"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value="Postnummer:  "/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="ea439" class="javax.swing.JTextField" binding="textFieldPostnummer">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <minimumSize width="14" height="18"/>
+                  <preferredSize width="14" height="20"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="66f41" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="f429e" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="16"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value="Arbeidsleder:  "/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="d84f6" class="javax.swing.JComboBox" binding="comboBoxArbLeder" custom-create="true">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <minimumSize width="52" height="18"/>
+                  <preferredSize width="52" height="22"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="c2e8b" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="7f89" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="16"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value="Pris:  "/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="8a9c8" class="javax.swing.JFormattedTextField" binding="formattedTextField1" custom-create="true" default-binding="true">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <minimumSize width="14" height="18"/>
+                  <preferredSize width="14" height="20"/>
+                </properties>
+              </component>
+              <component id="407ed" class="javax.swing.JLabel">
+                <constraints border-constraint="East"/>
+                <properties>
+                  <text value=" NOK "/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="ca5e7" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="320" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentY value="0.0"/>
+              <inheritsPopupMenu value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="f30f2" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <maximumSize width="100" height="16"/>
+                  <minimumSize width="120" height="16"/>
+                  <preferredSize width="120" height="16"/>
+                  <text value=""/>
+                  <verticalTextPosition value="1"/>
+                </properties>
+              </component>
+              <component id="14443" class="javax.swing.JCheckBox" binding="utførtCheck">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <alignmentY value="0.5"/>
+                  <minimumSize width="69" height="18"/>
+                  <preferredSize width="69" height="20"/>
+                  <text value="Utført"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
